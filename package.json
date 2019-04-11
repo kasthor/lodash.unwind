@@ -7,6 +7,8 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -25,6 +27,12 @@
     "unwind",
     "lodash"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "commit-msg": "./node_modules/.bin/commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "author": "Giancarlo Palavicini",
   "license": "ISC"
 }
