@@ -10,8 +10,8 @@ beforeAll(() => {
   object = [
     {
       regular: 'key',
-      values: [{ l2: 1 }, { l2: 2 }, { l2: 3 }],
-    },
+      values: [{ l2: 1 }, { l2: 2 }, { l2: 3 }]
+    }
   ];
 });
 

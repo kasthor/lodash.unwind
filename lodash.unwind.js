@@ -6,7 +6,7 @@ module.exports = {
     key,
     func = function (i, ii) {
       return Object.assign({}, i, { [key]: ii });
-    },
+    }
   ) {
     const result = [];
 
@@ -21,6 +21,5 @@ module.exports = {
     });
 
     return result;
-  },
+  }
 };
-
